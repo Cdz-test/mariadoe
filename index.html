@@ -65,90 +65,231 @@
         </div>
     </header>
 
-    <section id="projects" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Mes Projets</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="card-hover bg-white rounded-xl overflow-hidden shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHwyfHxwcm9qZWN0fGVufDB8MHx8fDE3MzY3MDU4NTF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Projet 1" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Application Mobile E-commerce</h3>
-                        <p class="text-gray-600 mb-4">Design et développement d'une application mobile de vente en ligne</p>
-                        <div class="flex gap-2">
-                            <span class="px-3 py-1 bg-pink-100 text-pink-600 rounded-full text-sm">React Native</span>
-                            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">Firebase</span>
-                        </div>
+    <section id="projects" class="py-20 bg-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-purple-50 to-indigo-50 opacity-50"></div>
+    <div class="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-purple-100/30 to-transparent"></div>
+    
+    <div class="container mx-auto px-6 relative">
+        <h2 class="text-6xl font-bold text-center mb-16 gradient-text animate-float">
+            <span class="relative inline-block before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-full before:h-1 before:bg-gradient-to-r before:from-purple-600 before:to-indigo-600 after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:bg-gradient-to-r after:from-pink-500 after:to-purple-500 after:transition-all after:duration-1000 hover:after:w-full">Mes Projets</span>
+        </h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 perspective-1000">
+            <div class="card-hover bg-white/80 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg transform-gpu transition-all duration-500 hover:shadow-2xl hover:scale-105 hover:rotate-y-10 group">
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHwyfHxwcm9qZWN0fGVufDB8MHx8fDE3MzY3MDU4NTF8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Projet 1" class="w-full h-48 object-cover transform transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <span class="text-white text-sm font-medium">Cliquez pour voir plus</span>
                     </div>
                 </div>
-                <div class="card-hover bg-white rounded-xl overflow-hidden shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHwxNHx8d2Vic2l0ZXxlbnwwfDB8fHwxNzM2NzA1ODgwfDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Projet 2" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Site Web Portfolio</h3>
-                        <p class="text-gray-600 mb-4">Création d'un portfolio interactif pour un photographe</p>
-                        <div class="flex gap-2">
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Next.js</span>
-                            <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">Tailwind</span>
-                        </div>
+                <div class="p-6 bg-white/90 backdrop-blur-sm transform transition-transform duration-300">
+                    <h3 class="text-xl font-bold mb-2 bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">Application Mobile E-commerce</h3>
+                    <p class="text-gray-600 mb-4 line-clamp-2 group-hover:line-clamp-none transition-all duration-300">Design et développement d'une application mobile de vente en ligne</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="px-3 py-1 bg-pink-100 text-pink-600 rounded-full text-sm animate-float delay-0">React Native</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm animate-float delay-100">Firebase</span>
                     </div>
                 </div>
-                <div class="card-hover bg-white rounded-xl overflow-hidden shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHw2fHx3ZWJzaXRlfGVufDB8MHx8fDE3MzY3MDU4ODB8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Projet 3" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Dashboard Analytics</h3>
-                        <p class="text-gray-600 mb-4">Interface d'administration pour une plateforme SaaS</p>
-                        <div class="flex gap-2">
-                            <span class="px-3 py-1 bg-yellow-100 text-yellow-600 rounded-full text-sm">Vue.js</span>
-                            <span class="px-3 py-1 bg-red-100 text-red-600 rounded-full text-sm">D3.js</span>
-                        </div>
+            </div>
+            
+            <div class="card-hover bg-white/80 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg transform-gpu transition-all duration-500 hover:shadow-2xl hover:scale-105 hover:rotate-y-10 group">
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHwxNHx8d2Vic2l0ZXxlbnwwfDB8fHwxNzM2NzA1ODgwfDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Projet 2" class="w-full h-48 object-cover transform transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <span class="text-white text-sm font-medium">Cliquez pour voir plus</span>
                     </div>
                 </div>
-            </div><div class="flex items-center justify-center p-6">
-    <a href="projets" id="page-link" data-page-id="6786677b5bdd5d45ef351547" class="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-semibold text-white transition-all duration-300 ease-in-out bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full overflow-hidden hover:from-indigo-600 hover:to-purple-600 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-        <span class="relative z-10 flex items-center">
-            Voir plus
-            <i class="fa fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i>
-        </span>
-        <span class="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-    </a>
-</div>
+                <div class="p-6 bg-white/90 backdrop-blur-sm transform transition-transform duration-300">
+                    <h3 class="text-xl font-bold mb-2 bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">Site Web Portfolio</h3>
+                    <p class="text-gray-600 mb-4 line-clamp-2 group-hover:line-clamp-none transition-all duration-300">Création d'un portfolio interactif pour un photographe</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm animate-float delay-200">Next.js</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm animate-float delay-300">Tailwind</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-hover bg-white/80 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg transform-gpu transition-all duration-500 hover:shadow-2xl hover:scale-105 hover:rotate-y-10 group">
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHw2fHx3ZWJzaXRlfGVufDB8MHx8fDE3MzY3MDU4ODB8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Projet 3" class="w-full h-48 object-cover transform transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <span class="text-white text-sm font-medium">Cliquez pour voir plus</span>
+                    </div>
+                </div>
+                <div class="p-6 bg-white/90 backdrop-blur-sm transform transition-transform duration-300">
+                    <h3 class="text-xl font-bold mb-2 bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">Dashboard Analytics</h3>
+                    <p class="text-gray-600 mb-4 line-clamp-2 group-hover:line-clamp-none transition-all duration-300">Interface d'administration pour une plateforme SaaS</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="px-3 py-1 bg-yellow-100 text-yellow-600 rounded-full text-sm animate-float delay-400">Vue.js</span>
+                        <span class="px-3 py-1 bg-red-100 text-red-600 rounded-full text-sm animate-float delay-500">D3.js</span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+        
+        <div class="flex items-center justify-center p-6 mt-12">
+            <a href="projets" id="page-link" data-page-id="6786677b5bdd5d45ef351547" class="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-500 ease-in-out bg-gradient-to-r from-purple-600 via-indigo-600 to-purple-600 bg-size-200 rounded-full overflow-hidden hover:bg-pos-100 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                <span class="relative z-10 flex items-center">
+                    Voir plus
+                    <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-3 transition-transform duration-300"></i>
+                </span>
+                <div class="absolute inset-0 flex space-x-1 overflow-hidden">
+                    <div class="transform -skew-x-12 bg-white/20 animate-shine"></div>
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-r from-purple-600/0 via-white/20 to-purple-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            </a>
+        </div>
+    </div>
+    
+    
+    
+    <style>
+        @keyframes shine {
+            from { transform: translateX(-100%) skewX(-12deg); }
+            to { transform: translateX(200%) skewX(-12deg); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-shine { animation: shine 2s infinite; }
+        .animate-float { animation: float 3s ease-in-out infinite; }
+        .delay-0 { animation-delay: 0s; }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-500 { animation-delay: 0.5s; }
+        .bg-size-200 { background-size: 200% 100%; }
+        .bg-pos-100 { background-position: 100% 0; }
+        .perspective-1000 { perspective: 1000px; }
+        .rotate-y-10:hover { transform: rotateY(10deg); }
+        .card-hover:hover { transform: translateY(-5px) rotateY(10deg); }
+    </style>
+</section>
 
     <section id="skills" class="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Compétences</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="card-hover bg-white p-6 rounded-xl shadow-lg text-center">
-                    <i class="fas fa-code text-4xl text-pink-500 mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Développement Front-end</h3>
-                    <p class="text-gray-600">HTML, CSS, JavaScript, React, Vue.js</p>
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16 gradient-text animate-pulse">Compétences</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="card-hover bg-white p-6 rounded-xl shadow-lg text-center transform transition-all duration-300 hover:scale-105 hover:rotate-2 hover:bg-gradient-to-br from-pink-50 to-purple-100">
+                <div class="relative">
+                    <i class="fas fa-code text-4xl text-pink-500 mb-4 animate-float"></i>
+                    <div class="absolute -top-2 -right-2 w-4 h-4 bg-pink-400 rounded-full animate-ping"></div>
                 </div>
-                <div class="card-hover bg-white p-6 rounded-xl shadow-lg text-center">
-                    <i class="fas fa-paint-brush text-4xl text-purple-500 mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Design UI/UX</h3>
-                    <p class="text-gray-600">Figma, Adobe XD, Sketch</p>
+                <h3 class="text-xl font-bold mb-2 hover:text-pink-600 transition-colors">Développement Front-end</h3>
+                <p class="text-gray-600">HTML, CSS, JavaScript, React, Vue.js</p>
+                <div class="mt-4 space-y-2">
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-pink-500 h-2 rounded-full animate-width-90"></div>
+                    </div>
                 </div>
-                <div class="card-hover bg-white p-6 rounded-xl shadow-lg text-center">
-                    <i class="fas fa-mobile-alt text-4xl text-blue-500 mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Mobile</h3>
-                    <p class="text-gray-600">React Native, Flutter</p>
+            </div>
+            <div class="card-hover bg-white p-6 rounded-xl shadow-lg text-center transform transition-all duration-300 hover:scale-105 hover:rotate-2 hover:bg-gradient-to-br from-purple-50 to-indigo-100">
+                <div class="relative">
+                    <i class="fas fa-paint-brush text-4xl text-purple-500 mb-4 animate-float"></i>
+                    <div class="absolute -top-2 -right-2 w-4 h-4 bg-purple-400 rounded-full animate-ping"></div>
                 </div>
-                <div class="card-hover bg-white p-6 rounded-xl shadow-lg text-center">
-                    <i class="fas fa-database text-4xl text-green-500 mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Back-end</h3>
-                    <p class="text-gray-600">Node.js, Python, MongoDB</p>
+                <h3 class="text-xl font-bold mb-2 hover:text-purple-600 transition-colors">Design UI/UX</h3>
+                <p class="text-gray-600">Figma, Adobe XD, Sketch</p>
+                <div class="mt-4 space-y-2">
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-purple-500 h-2 rounded-full animate-width-85"></div>
+                    </div>
                 </div>
-            </div><div class="flex items-center justify-center p-6">
-    <a href="Compétences" id="page-link" data-page-id="67866dbc5bdd5d45ef351928" class="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-semibold text-white transition-all duration-300 ease-in-out bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full overflow-hidden hover:from-indigo-600 hover:to-purple-600 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-        <span class="relative z-10 flex items-center">
-            Voir plus
-            <i class="fa fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i>
-        </span>
-        <span class="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-    </a>
-</div>
+            </div>
+            <div class="card-hover bg-white p-6 rounded-xl shadow-lg text-center transform transition-all duration-300 hover:scale-105 hover:rotate-2 hover:bg-gradient-to-br from-blue-50 to-cyan-100">
+                <div class="relative">
+                    <i class="fas fa-mobile-alt text-4xl text-blue-500 mb-4 animate-float"></i>
+                    <div class="absolute -top-2 -right-2 w-4 h-4 bg-blue-400 rounded-full animate-ping"></div>
+                </div>
+                <h3 class="text-xl font-bold mb-2 hover:text-blue-600 transition-colors">Mobile</h3>
+                <p class="text-gray-600">React Native, Flutter</p>
+                <div class="mt-4 space-y-2">
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-blue-500 h-2 rounded-full animate-width-80"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-hover bg-white p-6 rounded-xl shadow-lg text-center transform transition-all duration-300 hover:scale-105 hover:rotate-2 hover:bg-gradient-to-br from-green-50 to-emerald-100">
+                <div class="relative">
+                    <i class="fas fa-database text-4xl text-green-500 mb-4 animate-float"></i>
+                    <div class="absolute -top-2 -right-2 w-4 h-4 bg-green-400 rounded-full animate-ping"></div>
+                </div>
+                <h3 class="text-xl font-bold mb-2 hover:text-green-600 transition-colors">Back-end</h3>
+                <p class="text-gray-600">Node.js, Python, MongoDB</p>
+                <div class="mt-4 space-y-2">
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-green-500 h-2 rounded-full animate-width-95"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+        <div class="flex items-center justify-center p-6 mt-8">
+            <a href="Compétences" id="page-link" data-page-id="67866dbc5bdd5d45ef351928" class="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-semibold text-white transition-all duration-300 ease-in-out bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full overflow-hidden hover:from-indigo-600 hover:to-purple-600 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                <span class="relative z-10 flex items-center">
+                    Voir plus
+                    <i class="fa fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i>
+                </span>
+                <span class="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+            </a>
+        </div>
+    </div>
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        @keyframes width-90 {
+            0% { width: 0%; }
+            100% { width: 90%; }
+        }
+        @keyframes width-85 {
+            0% { width: 0%; }
+            100% { width: 85%; }
+        }
+        @keyframes width-80 {
+            0% { width: 0%; }
+            100% { width: 80%; }
+        }
+        @keyframes width-95 {
+            0% { width: 0%; }
+            100% { width: 95%; }
+        }
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        .animate-width-90 {
+            animation: width-90 1.5s ease-out forwards;
+        }
+        .animate-width-85 {
+            animation: width-85 1.5s ease-out forwards;
+        }
+        .animate-width-80 {
+            animation: width-80 1.5s ease-out forwards;
+        }
+        .animate-width-95 {
+            animation: width-95 1.5s ease-out forwards;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #6366f1, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            background-size: 200% 200%;
+            animation: gradient 8s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</section>
 
     <section id="contact" class="py-20 bg-white">
         <div class="container mx-auto px-6">
