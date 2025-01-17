@@ -30,6 +30,7 @@
         }
     </style>
     <meta name="description" content="Mariadoe, une femme parfaite.">
+  <script src="https://unpkg.com/alpinejs" defer></script>
 </head>
 <body class="bg-gradient-to-br from-purple-50 to-pink-50">
     <nav class="fixed w-full bg-white/80 backdrop-blur-lg z-50 shadow-sm">
@@ -63,7 +64,41 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header><section x-data="{ currentSlide: 0 }" class="relative w-full mx-auto px-4 py-16">
+    <div class="overflow-hidden relative rounded-xl shadow-2xl">
+        <div class="flex transition-transform duration-500 ease-in-out" :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
+            <div class="min-w-full">
+                <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHwxNXx8ZGVzaWdufGVufDB8MHx8fDE3MzcxMjUzNDl8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Gallery Image 1" class="w-full h-[600px] object-cover">
+            </div>
+            <div class="min-w-full">
+                <img src="https://images.unsplash.com/photo-1541462608143-67571c6738dd?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHw5fHxkZXNpZ258ZW58MHwwfHx8MTczNzEyNTM0OXww&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Gallery Image 2" class="w-full h-[600px] object-cover">
+            </div>
+            <div class="min-w-full">
+                <img src="https://images.unsplash.com/photo-1493421419110-74f4e85ba126?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHwxM3x8ZGVzaWdufGVufDB8MHx8fDE3MzcxMjUzNDl8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Gallery Image 3" class="w-full h-[600px] object-cover">
+            </div>
+            <div class="min-w-full">
+                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHwxOHx8ZGVzaWdufGVufDB8MHx8fDE3MzcxMjUzNDl8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Gallery Image 4" class="w-full h-[600px] object-cover">
+            </div>
+            <div class="min-w-full">
+                <img src="https://images.unsplash.com/photo-1416339442236-8ceb164046f8?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHwyM3x8ZGVzaWdufGVufDB8MHx8fDE3MzcxMjUzODh8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Gallery Image 5" class="w-full h-[600px] object-cover">
+            </div>
+        </div>
+
+        <button @click="currentSlide = currentSlide === 0 ? 4 : currentSlide - 1" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-4 rounded-full shadow-lg transition-all duration-300">
+            <i class="fa fa-chevron-left text-xl"></i>
+        </button>
+
+        <button @click="currentSlide = currentSlide === 4 ? 0 : currentSlide + 1" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-4 rounded-full shadow-lg transition-all duration-300">
+            <i class="fa fa-chevron-right text-xl"></i>
+        </button>
+
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+            <template x-for="(slide, index) in 5" :key="index">
+                <button @click="currentSlide = index" :class="{'bg-white': currentSlide === index, 'bg-white/50': currentSlide !== index}" class="w-3 h-3 rounded-full transition-all duration-300"></button>
+            </template>
+        </div>
+    </div>
+</section>
 
     <section id="projects" class="py-20 bg-white relative overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-br from-purple-50 to-indigo-50 opacity-50"></div>
