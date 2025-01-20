@@ -216,74 +216,88 @@
     </style>
 </section>
 
-    <section id="skills" class="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
-    <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-bold text-center mb-16 gradient-text animate-pulse">Compétences</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="card-hover bg-white p-6 rounded-xl shadow-lg text-center transform transition-all duration-300 hover:scale-105 hover:rotate-2 hover:bg-gradient-to-br from-pink-50 to-purple-100">
-                <div class="relative">
-                    <i class="fas fa-code text-4xl text-pink-500 mb-4 animate-float"></i>
+    <section id="skills" class="py-20 bg-gradient-to-br from-purple-50 to-pink-50 relative overflow-hidden">
+    
+    <div class="container mx-auto px-6 relative z-10">
+        <h2 class="text-5xl font-bold text-center mb-16 gradient-text animate-pulse tracking-wider">Compétences</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 perspective-1000">
+            <div class="skill-card bg-white p-8 rounded-2xl shadow-2xl text-center transform transition-all duration-500 hover:scale-105 hover:rotate-2 hover:bg-gradient-to-br from-pink-50 to-purple-100 backdrop-blur-sm">
+                <div class="relative group">
+                    <div class="absolute inset-0 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full blur opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                    <i class="fas fa-code text-5xl text-pink-500 mb-6 animate-float relative z-10"></i>
                     <div class="absolute -top-2 -right-2 w-4 h-4 bg-pink-400 rounded-full animate-ping"></div>
                 </div>
-                <h3 class="text-xl font-bold mb-2 hover:text-pink-600 transition-colors">Développement Front-end</h3>
-                <p class="text-gray-600">HTML, CSS, JavaScript, React, Vue.js</p>
-                <div class="mt-4 space-y-2">
-                    <div class="w-full bg-gray-200 rounded-full h-2">
-                        <div class="bg-pink-500 h-2 rounded-full animate-width-90"></div>
-                    </div>
+                <h3 class="text-2xl font-bold mb-4 hover:text-pink-600 transition-colors">Front-end</h3>
+                <p class="text-gray-600 mb-6">HTML, CSS, JavaScript</p>
+                <div class="skill-meter relative h-3 bg-gray-200 rounded-full overflow-hidden">
+                    <div class="absolute top-0 left-0 h-full w-full bg-gradient-to-r from-pink-400 to-purple-500 transform -skew-x-12 animate-width-90"></div>
+                </div>
+                <div class="skill-details mt-4 opacity-0 transform translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                    <span class="text-sm text-gray-500">90% Maîtrise</span>
                 </div>
             </div>
-            <div class="card-hover bg-white p-6 rounded-xl shadow-lg text-center transform transition-all duration-300 hover:scale-105 hover:rotate-2 hover:bg-gradient-to-br from-purple-50 to-indigo-100">
-                <div class="relative">
-                    <i class="fas fa-paint-brush text-4xl text-purple-500 mb-4 animate-float"></i>
+            <div class="skill-card bg-white p-8 rounded-2xl shadow-2xl text-center transform transition-all duration-500 hover:scale-105 hover:rotate-2 hover:bg-gradient-to-br from-purple-50 to-indigo-100 backdrop-blur-sm">
+                <div class="relative group">
+                    <div class="absolute inset-0 bg-gradient-to-r from-purple-400 to-indigo-400 rounded-full blur opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                    <i class="fas fa-paint-brush text-5xl text-purple-500 mb-6 animate-float relative z-10"></i>
                     <div class="absolute -top-2 -right-2 w-4 h-4 bg-purple-400 rounded-full animate-ping"></div>
                 </div>
-                <h3 class="text-xl font-bold mb-2 hover:text-purple-600 transition-colors">Design UI/UX</h3>
-                <p class="text-gray-600">Figma, Adobe XD, Sketch</p>
-                <div class="mt-4 space-y-2">
-                    <div class="w-full bg-gray-200 rounded-full h-2">
-                        <div class="bg-purple-500 h-2 rounded-full animate-width-85"></div>
-                    </div>
+                <h3 class="text-2xl font-bold mb-4 hover:text-purple-600 transition-colors">Design UI/UX</h3>
+                <p class="text-gray-600 mb-6">Figma, Adobe XD, Sketch</p>
+                <div class="skill-meter relative h-3 bg-gray-200 rounded-full overflow-hidden">
+                    <div class="absolute top-0 left-0 h-full w-full bg-gradient-to-r from-purple-400 to-indigo-500 transform -skew-x-12 animate-width-85"></div>
+                </div>
+                <div class="skill-details mt-4 opacity-0 transform translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                    <span class="text-sm text-gray-500">85% Maîtrise</span>
                 </div>
             </div>
-            <div class="card-hover bg-white p-6 rounded-xl shadow-lg text-center transform transition-all duration-300 hover:scale-105 hover:rotate-2 hover:bg-gradient-to-br from-blue-50 to-cyan-100">
-                <div class="relative">
-                    <i class="fas fa-mobile-alt text-4xl text-blue-500 mb-4 animate-float"></i>
+            <div class="skill-card bg-white p-8 rounded-2xl shadow-2xl text-center transform transition-all duration-500 hover:scale-105 hover:rotate-2 hover:bg-gradient-to-br from-blue-50 to-cyan-100 backdrop-blur-sm">
+                <div class="relative group">
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full blur opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                    <i class="fas fa-mobile-alt text-5xl text-blue-500 mb-6 animate-float relative z-10"></i>
                     <div class="absolute -top-2 -right-2 w-4 h-4 bg-blue-400 rounded-full animate-ping"></div>
                 </div>
-                <h3 class="text-xl font-bold mb-2 hover:text-blue-600 transition-colors">Mobile</h3>
-                <p class="text-gray-600">React Native, Flutter</p>
-                <div class="mt-4 space-y-2">
-                    <div class="w-full bg-gray-200 rounded-full h-2">
-                        <div class="bg-blue-500 h-2 rounded-full animate-width-80"></div>
-                    </div>
+                <h3 class="text-2xl font-bold mb-4 hover:text-blue-600 transition-colors">Mobile</h3>
+                <p class="text-gray-600 mb-6">React Native, Flutter</p>
+                <div class="skill-meter relative h-3 bg-gray-200 rounded-full overflow-hidden">
+                    <div class="absolute top-0 left-0 h-full w-full bg-gradient-to-r from-blue-400 to-cyan-500 transform -skew-x-12 animate-width-80"></div>
+                </div>
+                <div class="skill-details mt-4 opacity-0 transform translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                    <span class="text-sm text-gray-500">80% Maîtrise</span>
                 </div>
             </div>
-            <div class="card-hover bg-white p-6 rounded-xl shadow-lg text-center transform transition-all duration-300 hover:scale-105 hover:rotate-2 hover:bg-gradient-to-br from-green-50 to-emerald-100">
-                <div class="relative">
-                    <i class="fas fa-database text-4xl text-green-500 mb-4 animate-float"></i>
+            <div class="skill-card bg-white p-8 rounded-2xl shadow-2xl text-center transform transition-all duration-500 hover:scale-105 hover:rotate-2 hover:bg-gradient-to-br from-green-50 to-emerald-100 backdrop-blur-sm">
+                <div class="relative group">
+                    <div class="absolute inset-0 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full blur opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                    <i class="fas fa-database text-5xl text-green-500 mb-6 animate-float relative z-10"></i>
                     <div class="absolute -top-2 -right-2 w-4 h-4 bg-green-400 rounded-full animate-ping"></div>
                 </div>
-                <h3 class="text-xl font-bold mb-2 hover:text-green-600 transition-colors">Back-end</h3>
-                <p class="text-gray-600">Node.js, Python, MongoDB</p>
-                <div class="mt-4 space-y-2">
-                    <div class="w-full bg-gray-200 rounded-full h-2">
-                        <div class="bg-green-500 h-2 rounded-full animate-width-95"></div>
-                    </div>
+                <h3 class="text-2xl font-bold mb-4 hover:text-green-600 transition-colors">Back-end</h3>
+                <p class="text-gray-600 mb-6">Node.js, Python, MongoDB</p>
+                <div class="skill-meter relative h-3 bg-gray-200 rounded-full overflow-hidden">
+                    <div class="absolute top-0 left-0 h-full w-full bg-gradient-to-r from-green-400 to-emerald-500 transform -skew-x-12 animate-width-95"></div>
+                </div>
+                <div class="skill-details mt-4 opacity-0 transform translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                    <span class="text-sm text-gray-500">95% Maîtrise</span>
                 </div>
             </div>
         </div>
-        <div class="flex items-center justify-center p-6 mt-8">
-            <a href="Compétences" id="page-link" data-page-id="67866dbc5bdd5d45ef351928" class="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-semibold text-white transition-all duration-300 ease-in-out bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full overflow-hidden hover:from-indigo-600 hover:to-purple-600 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+        <div class="flex items-center justify-center p-6 mt-12">
+            <a href="Compétences" id="page-link" data-page-id="67866dbc5bdd5d45ef351928" class="group relative inline-flex items-center justify-center px-10 py-4 text-lg font-bold text-white transition-all duration-500 ease-in-out bg-gradient-to-r from-purple-600 via-pink-600 to-indigo-600 rounded-full overflow-hidden hover:shadow-[0_0_25px_rgba(168,85,247,0.5)] transform hover:-translate-y-1">
+                <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-purple-600 to-pink-600 animate-gradient-x"></span>
+                <span class="absolute inset-0 w-full h-full opacity-0 hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-indigo-600 to-purple-600"></span>
                 <span class="relative z-10 flex items-center">
                     Voir plus
-                    <i class="fa fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i>
+                    <i class="fa fa-arrow-right ml-3 transform group-hover:translate-x-2 transition-transform duration-300"></i>
                 </span>
-                <span class="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </a>
         </div>
     </div>
     <style>
+        .bg-grid-pattern {
+            background-image: radial-gradient(circle, #6366f1 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
         @keyframes float {
             0% { transform: translateY(0px); }
             50% { transform: translateY(-10px); }
@@ -333,31 +347,134 @@
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
+        .perspective-1000 {
+            perspective: 1000px;
+        }
+        .skill-card {
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+        }
+        @keyframes gradient-x {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        .animate-gradient-x {
+            animation: gradient-x 3s linear infinite;
+            background-size: 200% 100%;
+        }
+    </style>
+</section><section class="py-16 px-4">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Questions Fréquentes</h2>
+        
+        <div class="space-y-4">
+            <details class="bg-white rounded-lg shadow-md overflow-hidden group">
+                <summary class="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50 transition-all">
+                    <h3 class="text-lg font-semibold text-gray-800">Quels sont vos services en tant que Designer UI/UX ?</h3>
+                    <i class="fa fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform duration-300"></i>
+                </summary>
+                <div class="p-6 pt-0 text-gray-600 animate-[slideDown_0.2s_ease-out]">
+                    Je propose une gamme complète de services incluant la conception d'interfaces utilisateur, l'expérience utilisateur, le prototypage, les tests utilisateurs et la direction artistique pour sites web et applications mobiles.
+                </div>
+            </details>
+
+            <details class="bg-white rounded-lg shadow-md overflow-hidden group">
+                <summary class="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50 transition-all">
+                    <h3 class="text-lg font-semibold text-gray-800">Comment se déroule votre processus de travail ?</h3>
+                    <i class="fa fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform duration-300"></i>
+                </summary>
+                <div class="p-6 pt-0 text-gray-600 animate-[slideDown_0.2s_ease-out]">
+                    Mon processus commence par une phase de découverte, suivie de recherches utilisateurs, wireframing, design UI, prototypage, et se termine par des tests et itérations pour assurer la meilleure expérience possible.
+                </div>
+            </details>
+
+            <details class="bg-white rounded-lg shadow-md overflow-hidden group">
+                <summary class="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50 transition-all">
+                    <h3 class="text-lg font-semibold text-gray-800">Quels sont vos délais moyens de réalisation ?</h3>
+                    <i class="fa fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform duration-300"></i>
+                </summary>
+                <div class="p-6 pt-0 text-gray-600 animate-[slideDown_0.2s_ease-out]">
+                    Les délais varient selon la complexité du projet. Un site vitrine prend généralement 4-6 semaines, tandis qu'une application complète peut nécessiter 2-3 mois ou plus.
+                </div>
+            </details>
+
+            <details class="bg-white rounded-lg shadow-md overflow-hidden group">
+                <summary class="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50 transition-all">
+                    <h3 class="text-lg font-semibold text-gray-800">Travaillez-vous à distance ?</h3>
+                    <i class="fa fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform duration-300"></i>
+                </summary>
+                <div class="p-6 pt-0 text-gray-600 animate-[slideDown_0.2s_ease-out]">
+                    Oui, je travaille principalement à distance avec des clients du monde entier, en utilisant des outils de collaboration comme Figma, Slack et Zoom pour maintenir une communication efficace.
+                </div>
+            </details>
+        </div>
+    </div>
+
+    <style>
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        details[open] summary ~ * {
+            animation: slideDown 0.2s ease-out;
+        }
     </style>
 </section>
 
-    <section id="contact" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Me Contacter</h2>
-            <div class="max-w-2xl mx-auto">
-                <form class="space-y-6">
-                    <div>
-                        <label class="block text-gray-700 mb-2">Nom complet</label>
-                        <input type="text" class="w-full px-4 py-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-pink-500">
-                    </div>
-                    <div>
-                        <label class="block text-gray-700 mb-2">Email</label>
-                        <input type="email" class="w-full px-4 py-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-pink-500">
-                    </div>
-                    <div>
-                        <label class="block text-gray-700 mb-2">Message</label>
-                        <textarea rows="4" class="w-full px-4 py-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
-                    </div>
-                    <button class="w-full bg-gradient-to-r from-pink-500 to-purple-500 text-white py-3 rounded-lg hover:opacity-90 transition-opacity">Envoyer</button>
-                </form>
-            </div>
+    <section id="contact" class="py-20 bg-gradient-to-br from-slate-900 to-gray-900 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-purple-500/20 animate-pulse pointer-events-none"></div>
+    <div class="container mx-auto px-6 relative">
+        <div class="flex flex-col items-center mb-16">
+            <h2 class="text-5xl font-bold text-center text-white mb-4 tracking-tight">Me Contacter</h2>
+            <div class="h-1 w-20 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full"></div>
         </div>
-    </section>
+        <div class="max-w-4xl mx-auto backdrop-blur-lg bg-white/10 p-8 rounded-2xl shadow-2xl border border-white/20">
+            <form id="contactForm" class="space-y-8" onsubmit="sendEmail(event)">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="group">
+                        <label class="block text-white/80 mb-2 font-medium transition-all group-focus-within:text-pink-400">Nom complet</label>
+                        <input type="text" name="name" required="" class="w-full px-6 py-4 rounded-xl border border-white/10 bg-white/5 text-white focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all placeholder-white/30" placeholder="John Doe">
+                    </div>
+                    <div class="group">
+                        <label class="block text-white/80 mb-2 font-medium transition-all group-focus-within:text-pink-400">Email</label>
+                        <input type="email" name="email" required="" class="w-full px-6 py-4 rounded-xl border border-white/10 bg-white/5 text-white focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all placeholder-white/30" placeholder="john@example.com">
+                    </div>
+                </div>
+                <div class="group">
+                    <label class="block text-white/80 mb-2 font-medium transition-all group-focus-within:text-pink-400">Message</label>
+                    <textarea name="message" required="" rows="6" class="w-full px-6 py-4 rounded-xl border border-white/10 bg-white/5 text-white focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all placeholder-white/30" placeholder="Votre message ici..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-pink-500 to-purple-500 text-white py-4 px-8 rounded-xl hover:shadow-lg hover:shadow-pink-500/25 transition-all duration-300 transform hover:-translate-y-1 font-medium text-lg">
+                    <span class="flex items-center justify-center gap-2">
+                        <span>Envoyer</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function sendEmail(e) {
+            e.preventDefault();
+            const form = e.target;
+            const name = form.name.value;
+            const email = form.email.value;
+            const message = form.message.value;
+            
+            const emailBody = `Nom: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
+            const mailtoLink = `mailto:maria.doe@gmail.com?subject=Nouveau message de contact&body=${emailBody}`;
+            
+            const link = document.createElement('a');
+            link.href = mailtoLink;
+            link.click();
+            
+            form.reset();
+        }
+    </script>
+</section>
 
     <footer class="bg-gray-900 text-white py-12">
         <div class="container mx-auto px-6">
