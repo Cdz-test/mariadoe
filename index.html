@@ -59,22 +59,58 @@
 </nav>
 
     <header id="home" class="min-h-screen flex items-center pt-20">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="text-center md:text-left">
-                    <h1 class="text-5xl md:text-6xl font-bold mb-6 gradient-text animate-float">Maria Doe</h1>
-                    <p class="text-xl text-gray-600 mb-8">Développeuse Créative &amp; Designer UI/UX</p>
-                    <div class="flex flex-wrap gap-4 justify-center md:justify-start">
-                        <a href="#contact" class="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-8 py-3 rounded-full hover:opacity-90 transition-opacity">Me contacter</a>
-                        <a href="projets" class="border-2 border-purple-500 text-purple-500 px-8 py-3 rounded-full hover:bg-purple-500 hover:text-white transition-colors" id="page-link" data-page-id="6786677b5bdd5d45ef351547">Voir mes projets</a>
-                    </div>
-                </div>
-                <div class="animate-float">
-                    <img src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHw5fHxnaXJsfGVufDB8Mnx8fDE3MzY3MDU4Mjl8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Portrait" class="rounded-full mx-auto shadow-2xl">
+    <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="text-center md:text-left">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 gradient-text animate-float">Maria Doe</h1>
+                <p class="text-xl text-gray-600 mb-8">Développeuse Créative &amp; Designer UI/UX</p>
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                    <a href="#contact" class="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-8 py-3 rounded-full hover:opacity-90 transition-opacity">Me contacter</a>
+                    <a href="projets" class="border-2 border-purple-500 text-purple-500 px-8 py-3 rounded-full hover:bg-purple-500 hover:text-white transition-colors" id="page-link" data-page-id="6786677b5bdd5d45ef351547">Voir mes projets</a>
                 </div>
             </div>
+            <div class="animate-float perspective-1000" id="tilt-wrapper">
+                <img src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w2MjU1MDF8MHwxfHNlYXJjaHw5fHxnaXJsfGVufDB8Mnx8fDE3MzY3MDU4Mjl8MA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080" alt="Portrait" class="rounded-full mx-auto shadow-2xl transition-all duration-100 ease-out transform-gpu" id="tilt-image">
+                <style>
+                    .perspective-1000 {
+                        perspective: 1000px;
+                    }
+                </style>
+                <script>
+                    const wrapper = document.getElementById('tilt-wrapper');
+                    const image = document.getElementById('tilt-image');
+                    let rafId = null;
+
+                    function updateTilt(e) {
+                        if (rafId) return;
+                        
+                        rafId = requestAnimationFrame(() => {
+                            const rect = wrapper.getBoundingClientRect();
+                            const centerX = rect.left + rect.width / 2;
+                            const centerY = rect.top + rect.height / 2;
+                            const mouseX = e.clientX - centerX;
+                            const mouseY = e.clientY - centerY;
+                            const rotateX = (mouseY / (rect.height / 2)) * -15;
+                            const rotateY = (mouseX / (rect.width / 2)) * 15;
+                            
+                            image.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+                            rafId = null;
+                        });
+                    }
+
+                    wrapper.addEventListener('mousemove', updateTilt);
+                    wrapper.addEventListener('mouseleave', () => {
+                        if (rafId) {
+                            cancelAnimationFrame(rafId);
+                            rafId = null;
+                        }
+                        image.style.transform = 'rotateX(0) rotateY(0)';
+                    });
+                </script>
+            </div>
         </div>
-    </header><section x-data="{ currentSlide: 0 }" class="relative w-full mx-auto px-4 py-16">
+    </div>
+</header><section x-data="{ currentSlide: 0 }" class="relative w-full mx-auto px-4 py-16">
     <div class="overflow-hidden relative rounded-xl shadow-2xl">
         <div class="flex transition-transform duration-500 ease-in-out" :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
             <div class="min-w-full">
